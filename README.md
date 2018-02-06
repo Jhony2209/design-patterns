@@ -1,1 +1,1 @@
-# design-patterns
+# Curso Design Patterns PHP I: Boas práticas de programação
