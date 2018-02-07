@@ -2,7 +2,7 @@
 
 interface Imposto {
 
-    public function calcula(Orcamento $Orcamento);
+    public function calcula(Orcamento $orcamento);
 }
 
 ?>

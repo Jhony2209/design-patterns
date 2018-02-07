@@ -1,12 +1,8 @@
 <?php
-
 class CalculadoraDeImpostos {
 
-    public function calcula(Orcamento $Orcamento, Imposto $imposto) {
-
-        return $imposto->calcula($Orcamento);
-    }
-
-}
-
-?>
+        public function calcula(Orcamento $orcamento, Imposto $estrategiaDeImposto) {
+          $resultado = $estrategiaDeImposto->calcula($orcamento);
+          return $resultado;
+        }
+      }

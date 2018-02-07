@@ -18,8 +18,10 @@ class CalculadoraDeDescontos {
         $desconto500Reais->setProximo($desconto300Reais);
         $desconto300Reais->setProximo($semDesconto);
         $valorDoDesconto = $desconto5Itens->desconto($Orcamento);
-        
+                
         return $valorDoDesconto;
+       
+        
     }
 
 }

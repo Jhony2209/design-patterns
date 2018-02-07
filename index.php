@@ -10,13 +10,14 @@ require "Item.php";
 require "CalculadoraDeImpostos.php";
 require "CalculadoraDeDescontos.php";
 require "Imposto.php";
+require "TemplateDeImpostoCondicional.php";
 require "ICMS.php";
 require "ISS.php";
 require "KCV.php";
 require "ICCC.php";
 
 
-$reforma = new Orcamento(301);
+$reforma = new Orcamento(490);
 $novoImposto = new ICCC();
 
 $calculadora = new CalculadoraDeImpostos();
