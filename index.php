@@ -14,15 +14,14 @@ require "TemplateDeImpostoCondicional.php";
 require "ICMS.php";
 require "ISS.php";
 require "KCV.php";
-require "ICCC.php";
+
 
 
 $reforma = new Orcamento(490);
-$novoImposto = new ICCC();
 
 $calculadora = new CalculadoraDeImpostos();
 
-echo $calculadora->calcula($reforma, new ICMS());
+echo $calculadora->calcula($reforma, new ICMS(new ISS()));
 
 echo "<br />";
 
