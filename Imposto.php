@@ -1,6 +1,8 @@
 <?php
 
-    interface Imposto{
-        public function calcula(Orcamento $Orcamento);
-    }
+interface Imposto {
+
+    public function calcula(Orcamento $Orcamento);
+}
+
 ?>
