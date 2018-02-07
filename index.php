@@ -14,10 +14,27 @@ require "TemplateDeImpostoCondicional.php";
 require "ICMS.php";
 require "ISS.php";
 require "KCV.php";
+require "EstadoDeUmOrcamento.php";
+require "Aprovado.php";
+require "EmAprovacao.php";
+require "Reprovado.php";
+require "Finalizado.php";
 
 
 
 $reforma = new Orcamento(490);
+
+echo $reforma->getValor() . "<br />";
+
+$reforma->aplicaDesconto();
+
+echo $reforma->getValor() . "<br />";
+
+$reforma->aprova();
+
+$reforma->aplicaDesconto();
+
+echo $reforma->getValor() . "<br />";
 
 $calculadora = new CalculadoraDeImpostos();
 
